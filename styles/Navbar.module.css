@@ -12,3 +12,14 @@
 .imgIninio{
     cursor: pointer;
 }
+
+@media screen and (max-widht: 480px) {
+    .container{
+        padding: 0 20px;
+    }
+
+    .list{
+        display: none;
+    }
+    
+}

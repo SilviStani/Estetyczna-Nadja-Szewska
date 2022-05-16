@@ -13,12 +13,12 @@ const Navbar = () => {
         alt='estetica Nadja Szewska'
         className={styles.imgIninio}/>
         </Link>
-        <Link href='/products/facial'>Estetica Profesional Facial</Link>
-        <Link href='/products/corporal'>Estetica Profesional Corporal</Link>
-        <Link href='/products/maquillaje'>Maquillaje Profesional</Link>
-        <Link href='/products/microblanding'>Técnica Dermopen/Microblanding/Microshading</Link>
-        <Link href='/products/manicuria'>Belleza de manos</Link>
-        <Link href='/contact'>Contacto</Link>
+        <Link href='/products/facial' className={styles.list}>Estetica Profesional Facial</Link>
+        <Link href='/products/corporal' className={styles.list}>Estetica Profesional Corporal</Link>
+        <Link href='/products/maquillaje' className={styles.list}>Maquillaje Profesional</Link>
+        <Link href='/products/microblanding' className={styles.list}>Técnica Dermopen/Microblanding/Microshading</Link>
+        <Link href='/products/manicuria' className={styles.list}>Belleza de manos</Link>
+        <Link href='/contact' className={styles.list}>Contacto</Link>
     </div>
   )
 }
