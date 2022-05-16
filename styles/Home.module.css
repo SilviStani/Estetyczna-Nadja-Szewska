@@ -108,6 +108,10 @@
   margin-left: 0.5rem;
 }
 
+.h1{
+  color: #AAAAF2;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
