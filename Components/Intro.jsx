@@ -8,9 +8,9 @@ const Intro = () => {
         <div className={styles.card}>
             <h1 className={styles.title}><span className={styles.brand}>Estetyczna</span> Nadja Szewska</h1>
             <p className={styles.desc}>
-                Crear descripcion acerca de Estetyczna Nadja Szewska
+               **El único modo de hacer un gran trabajo es AMAR LO QUE HACES** <br /> -Steve Jobs.
             </p>
-            <button className={styles.button}>Descubre</button>
+            {/*<button className={styles.button}>Descubre</button>*/}
         </div>
         <div className={styles.card}>
             <Image src='/img/flores.jpg'
