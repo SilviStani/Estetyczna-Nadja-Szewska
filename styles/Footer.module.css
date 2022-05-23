@@ -61,14 +61,20 @@ flex: 2;
     .container{
         height: auto;
         flex-direction: column;
+        flex-wrap: wrap;
+       padding: 20px;
     }
     
     .title, .linkTitle{
         flex: 30px;
+        font-size: 20px;
     }
     
     .cardItem{
         text-align: center;
         font-size: 15px;
+    }
+    .cardItem1{
+        display: none;
     }
 }

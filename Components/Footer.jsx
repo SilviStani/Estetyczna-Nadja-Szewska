@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={styles.cardL}>
       <h1 className={styles.title}><span className={styles.brand}>Estetyczna </span>Nadja Szewska</h1>
       <h1 className={styles.linkTitle}>
-        <a href="/contact" passHref>
+        <a href="/contact">
         <span className={styles.linkText}>Consultas</span>
         <Image src="/img/relajarse.png" width="40px" height="40px" alt=""/>
         </a>

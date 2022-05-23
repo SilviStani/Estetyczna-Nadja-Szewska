@@ -2,8 +2,10 @@ import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Navbar.module.css'
 import Image from 'next/image'
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false)
   return (
     <div className={styles.container}>
         <Link href='/'>
@@ -13,13 +15,31 @@ const Navbar = () => {
         alt='estetica Nadja Szewska'
         className={styles.imgIninio}/>
         </Link>
-        <Link href='/products/facial' className={styles.list}>Estetica Profesional Facial</Link>
-        <Link href='/products/corporal' className={styles.list}>Estetica Profesional Corporal</Link>
-        <Link href='/products/maquillaje' className={styles.list}>Maquillaje Profesional</Link>
-        <Link href='/products/microblanding' className={styles.list}>Técnica Dermopen/Microblanding/Microshading</Link>
-        <Link href='/products/manicuria' className={styles.list}>Belleza de manos</Link>
-        <Link href='/contact' className={styles.list}>Contacto</Link>
-    </div>
+        <ul className={styles.list}>
+        <li className={styles.listItem}>
+          <Link href='/products/facial'>Estetica Profesional Facial</Link>
+        </li>
+        <li className={styles.listItem}><Link href='/products/corporal' >Estetica Profesional Corporal</Link></li>
+        <li className={styles.listItem}><Link href='/products/maquillaje' >Maquillaje Profesional</Link></li>
+        <li className={styles.listItem}><Link href='/products/microblanding' >Dermopen/Microblanding/Microshading</Link></li>
+        <li className={styles.listItem}><Link href='/products/manicuria' >Belleza de manos</Link></li>
+        <li className={styles.listItem}><Link href='/contact' >Contacto</Link></li>
+        </ul>
+
+        <div className={styles.hamburguer} onClick={() => setOpen(!open)}>
+          <div className={styles.line}></div>
+          <div className={styles.line}></div>
+          <div className={styles.line}></div>
+        </div>
+        <ul onClick={()=>setOpen(false)} className={styles.menu} style={{right: open ? '0px' : '-50vw'}}>
+        <li className={styles.menuItem}><Link href='/products/corporal' >Estetica Corporal</Link></li>
+        <li className={styles.menuItem}><Link href='/products/maquillaje' >Maquillaje</Link></li>
+        <li className={styles.menuItem}><Link href='/products/microblanding' >Dermo&Micro</Link></li>
+        <li className={styles.menuItem}><Link href='/products/manicuria' >Belleza manos</Link></li>
+        <li className={styles.menuItem}><Link href='/contact' >Contacto</Link></li> 
+        </ul>
+
+        </div>
   )
 }
 

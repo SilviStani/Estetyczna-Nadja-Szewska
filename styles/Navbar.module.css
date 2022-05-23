@@ -12,14 +12,65 @@
 .imgIninio{
     cursor: pointer;
 }
+.listItem {
+    display: inline;
+    margin-right: 30px;
+    font-size: 15px;
+    /* font-weight: 300; */
+    color: white;
+    cursor: pointer;
+  }
 
-@media screen and (max-widht: 480px) {
+  .hamburguer{
+      display: none;
+  }
+
+  .menu{
+      display: none;
+  }
+  
+  @media screen and (max-width: 480px) {
     .container{
         padding: 0 20px;
+        position: relative;
     }
 
-    .list{
+    .listItem{
         display: none;
     }
     
+    .hamburguer{
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .line{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+    }
+
+    .menu{
+        position: fixed;
+        height: calc(100vh - 50px);
+        width: 50vw;
+        background-color: #AAAAF2;
+        top: 50px;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: white;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 999;
+        transition: 1s all ease;
+    }
+
 }
