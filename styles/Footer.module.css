@@ -18,6 +18,9 @@ padding: 50px;
 
 .linkTitle{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 .link{
@@ -41,12 +44,17 @@ flex: 2;
 .cardItem{
     font-size: 14px; 
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .a{
+    display: flex;
     color: #AAAAF2;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
+    align-items: center;
+    margin-left: 40px;
 }
 
 .cardItem1{
@@ -55,6 +63,8 @@ flex: 2;
     padding: 15px;
     border:solid #AAAAF2;
     width: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 480px){

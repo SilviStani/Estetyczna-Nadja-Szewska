@@ -11,7 +11,7 @@ const Footer = () => {
       <h1 className={styles.linkTitle}>
         <a href="/contact">
         <span className={styles.linkText}>Consultas</span>
-        <Image src="/img/relajarse.png" width="40px" height="40px" alt=""/>
+        <Image src="/img/relajarse.png" width="100px" height="100px" alt=""/>
         </a>
       </h1>
       </div>
@@ -29,7 +29,7 @@ const Footer = () => {
            </a>
         </div>
         <div className={styles.cardItem1}>
-          Web Site Developer: Silvina Staniszewski<br/>Contact me: <a href="https://wa.me/5491163632288" passHref target='blank' className={styles.a}>1163632288</a>  
+         <a href="https://wa.me/5491163632288" passHref target='blank' className={styles.a}>Developed by:<Image src="/img/laptop_wave.png" width="80px" height="80px" alt=""></Image></a>  
         </div>
       </div>
     </div>
