@@ -7,9 +7,9 @@ const Intro = () => {
     <div className={styles.container}>
         <div className={styles.card}>
             <h1 className={styles.title}><span className={styles.brand}>Estetyczna</span> Nadja Szewska</h1>
-            <p className={styles.desc}>
-               **El único modo de hacer un gran trabajo es AMAR LO QUE HACES** <br /> -Steve Jobs.
-            </p>
+            <div className={styles.desc}>
+              <p> **El único modo de hacer un gran trabajo es AMAR LO QUE HACES** <br /> -Steve Jobs.</p>
+            </div>
             {/*<button className={styles.button}>Descubre</button>*/}
         </div>
         <div className={styles.card}>
