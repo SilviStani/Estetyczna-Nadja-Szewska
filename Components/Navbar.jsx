@@ -17,9 +17,9 @@ const Navbar = () => {
         </Link>
         <ul className={styles.list}>
         <li className={styles.listItem}>
-          <Link href='/products/facial'>Estetica Profesional Facial</Link>
+          <Link href='/products/facial'>Estetica Facial</Link>
         </li>
-        <li className={styles.listItem}><Link href='/products/corporal' >Estetica Profesional Corporal</Link></li>
+        <li className={styles.listItem}><Link href='/products/corporal' >Estetica Corporal</Link></li>
         <li className={styles.listItem}><Link href='/products/maquillaje' >Maquillaje Profesional</Link></li>
         <li className={styles.listItem}><Link href='/products/microblanding' >Dermopen/Microblanding/Microshading</Link></li>
         <li className={styles.listItem}><Link href='/products/manicuria' >Belleza de manos</Link></li>
