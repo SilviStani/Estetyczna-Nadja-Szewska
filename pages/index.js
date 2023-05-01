@@ -12,7 +12,7 @@ export default function Home({ services }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Estética Nadja Szewska</title>
         <meta name="description" content="Cuidado Personal" />
-        <link rel="icon" href="img/logo.png" />
+        <link rel="icon" href="/img/logo.png" />
       </Head>
       <Intro />
       <Services services={services} />
