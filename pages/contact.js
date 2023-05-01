@@ -1,4 +1,83 @@
-import React from 'react'
+import React, { useState } from "react";
+import Image from "next/image";
+import styles from "../styles/Contact.module.css";
+
+const Contact = () => {
+  const [message, setMessage] = useState("");
+  const [number, setNumber] = useState("");
+  const [name, setName] = useState("");
+
+  return (
+    <div className={styles.container} id="contacto">
+      <div className={styles.TituloContainer}>
+        <h1 className={styles.Titulo}>
+          Mensaje <span style={{ color: "crimson" }}>DIRECTO</span> al Whatsapp
+        </h1>
+      </div>
+      <div className={styles.Container}>
+        <div className={styles.Left}>
+          <Image
+            src={"/img/flores.jpg"}
+            alt="flores"
+            height={"400px"}
+            width={"400px"}
+            style={{ borderRadius: "100%" }}
+            objectFit="cover"
+          />
+        </div>
+        <div className={styles.Right}>
+          <form className={styles.formulario}>
+            <p>Nombre:</p>
+            <input
+              className={styles.inputs}
+              id="name"
+              placeholder="Nombre:"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <p>Número Alternativo:</p>
+            <input
+              className={styles.inputs}
+              id="number"
+              placeholder="Teléfono alternativo:"
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
+            />
+            <p>Consulta:</p>
+            <textarea
+              className={styles.area}
+              id="message"
+              name="w3review"
+              rows="4"
+              cols="50"
+              value={message}
+              placeholder={"Escribe tu consulta aqui:"}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <a
+              href={`https://wa.me/5493546537738/?text=Nombre: ${name} + // + %20 + Teléfono alternativo: ${number} + // + %20 + Mensaje: ${message}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.a}
+            >
+              <Image
+                src="/img/enviar-mensaje.png"
+                alt=""
+                height={"30px"}
+                width={"30px"}
+                className={styles.img}
+              />
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
+
+/*import React from 'react'
 import styles from '../styles/Contact.module.css'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
@@ -96,4 +175,4 @@ const handleSubmit = (e) => {
   )
 }
  
-export default Contact
+export default Contact*/

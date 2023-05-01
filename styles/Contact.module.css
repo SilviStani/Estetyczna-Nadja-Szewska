@@ -1,81 +1,97 @@
 .container{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   overflow: hidden;
-   position: relative;
-}
-
-.overflow{
-    z-index: 999;
-    background-color: white;
+    width: 100%;
+    height: calc(90vh - 50px);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    width: 300px;
 }
-
-.form{
-    width: 500px;
-    height: 500px;
-    padding: 50px;
+.Container{
     display: flex;
-    flex-wrap: wrap;
-}
-
-.inputS{
-    flex: 1;
-    height: 50px;
-    padding-left: 10px;
-}
-
-.inputS:first-child{
-    margin-right: 5px;
-}
-
-.inputL{
     width: 100%;
-    height: 50px;
-    padding-left: 10px;
 }
-
-.textArea{
-    width: 100%;
-    padding-left: 10px;
+.Left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
-
-.button{
-    margin-top: 20px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: #AAAAF2;
-    width: 100%;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
-.span {
+.Right{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 350px;
-    font-size: 20px;
-    font-weight: bold;
 }
-
-@media screen and (max-width: 480px) {
-    .form{
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border: #aaaaf2 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70px;
+    }
+.a:hover, .area:hover, .inputs:hover{
+    box-shadow: 2px 2px 2px 2px#aaaaf2;
+}
+.area{
+    height: 200px;
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid #aaaaf2;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inputs{
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border: 2px solid #aaaaf2;
+    width: 450px;
+    height: 40px;
+}
+@media screen and (max-width: 480px){
+    .container{
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Titulo{
+        font-size: 20px;
+    }
+    .Container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Left, .Right{
+        height: 50%;
         width: 100%;
     }
-
-    .inputS:first-child{
-        margin: 0;
+    .inputs{
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 5px;
+        border: 2px solid #aaaaf2;
+        width: 350px;
+        height: 40px;
+    }
+    .area{
+        height: 200px;
+        width: 350px;
+        border-radius: 10px;
+        border: 2px solid #aaaaf2;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .a{
+        margin-bottom: 10px;
     }
 }
